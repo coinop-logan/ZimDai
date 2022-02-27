@@ -1,0 +1,431 @@
+\documentclass{article}
+
+\usepackage[margin=1.85in]{geometry}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+}
+
+\title{The ZimDai Whitepaper\\
+	\large Blueprint for an Economic Jailbreak
+}
+\date{April 2021 (v1.2)}
+\author{Logan Brutsche}
+
+\begin{document}
+\pagenumbering{gobble}
+
+\maketitle
+\begin{abstract}
+	\setlength{\parskip}{1em}
+	Zimbabwe suffers under incredibly irresponsible and abusive economic control. The cryptocurrency industry and stack is now mature enough to break the Zimbabwean citizens out of this economic prison, given a comprehensive bootstrap plan and a moderate marketing budget.
+		
+	This document details such bootstrap plan for nation-wide, state-proof adoption of Dai in Zimbabwe, starting from virtually no awareness and ending with everyday use.
+\end{abstract}
+
+\newpage
+\newgeometry{left=1.5in,right=1.5in,top=1.5in,bottom=1.5in}
+\tableofcontents
+
+\setlength{\parskip}{0.5em}
+
+\newpage
+\pagenumbering{arabic}
+\section{The Situation} \label{situation}
+
+\subsection{Our Position} \label{position}
+
+We are Team Toast, the developers and mascots of \href{foundrydao.com}{Foundry}, a DAO being designed for radical economic freedom. While considering ways to market \href{https://foundrydao.com/products}{DAIHard}, a decentralized fiat-to-crypto gateway designed to operate even in oppositional jurisdictions, our attention was drawn to Zimbabwe.
+
+The author of this document then spent two months in Zimbabwe, primarily focused on two questions: Could Zimbabwe benefit from adoption of a stablecoin such as Dai? If so, how could such adoption be achieved?
+
+As to the first question, section 1 will spell out a resounding yes. The rest of the paper deals with the second question.
+
+\subsection{Zimbabwe's Plight} \label{zimbabwe}
+
+\subsubsection{Inflating Bond Notes} \label{inflation}
+
+The Zimbabwean banking system has perhaps the most irresponsible and predatory monetary policies in the world today.
+
+The current legally recognized currency is the \textit{bond note}, or RTGS. When it was introduced in 2016, it was originally pegged to the USD at a rate of 1:1. This didn't last. In January 2019, it took 3 bond notes to buy 1 USD, and by November the rate was swinging unpredictably between 12 and 17 bond notes to the dollar.
+
+Given Zimbabwe's \href{https://en.wikipedia.org/wiki/Hyperinflation_in_Zimbabwe}{history with hyperinflation}, this wasn't terribly surprising to the locals, and it's common knowledge in Zimbabwe that the bond note, like its predecessors, is headed for a collapse of value. Then, as before, the government will introduce another new currency, and the cycle will repeat. The bond note currently in circulation will be just the latest---but likely not the last---on a long list of failed currencies.
+
+It is practically impossible to save money in such an environment. Restaurants must re-print menus on a weekly basis to update the prices. Goods with long supply chains are disappearing from the shelf, as the money obtained from selling the product loses too much value by the time the shop tries to pay the supplier for more.
+
+\subsubsection{Abusive Banking System} \label{banking}
+
+Aside from inflation, the banking system itself has some dreadful characteristics that aren't as immediately apparent to an outside view.
+
+The most crippling issues are those related to withdrawals. A local must get to the bank before the bank actually opens, as a line is already forming. After standing in line for hours, if they weren't early enough, they are informed that the bank has simply run out of cash for the day. Further, successful withdrawals are limited to RTGS300 in a single week (or less, depending on the bank)---as of November 2019, \href{https://www.reuters.com/article/us-zimbabwe-economy-idUSKBN1XM14U}{an equivalent of 17-23 USD.}
+
+All bank transactions must also be accompanied by an invoice, making them infeasible for anyone other than businesses.
+
+Ecocash, a popular mobile-to-mobile payment system discussed further in \ref{ecocash market}, makes it easier to send small amounts to friends. But it has similar restrictions and higher fees, and charges an incredible 35-50\% to withdraw any balance into cash.
+
+\subsubsection{Foreign Cash in the Black Market} \label{usd}
+
+Currently, the most practical way for a local to protect his wealth is to obtain USD or other foreign cash and physically hold it. But the government has declared such use of foreign cash illegal, so to get it one must go to the black market money changers on the streets. This is further complicated by the fact that exchange rates change daily.
+
+While many businesses accept USD with varying levels of subtlety, this too is illegal, and comes with an incredible threat of a 10-year prison sentence (a threat not yet used, but extremely daunting nonetheless).
+
+Despite its illegality, USD and other foreign cash is still widely available. Businesses generally accept it, people use it to save, and the black-market money changers on the street have survived all attempts of eradication.
+
+\subsubsection{No Sound, Digital Currency} \label{gap}
+
+If a Zimbabwean obtains USD or other foreign cash, they are able to protect their wealth and save, but are prevented from digital money services like transfers, loans, or savings accounts.
+
+Being barred from digital money services becomes particularly cumbersome for a scaling business. In order to scale, they begin operating with the banking system, despite the the downsides: unpredictable regulation and rapid inflation.
+
+To summarize, today Zimbabweans have two mutually exclusive options: digital currency via the banking system that is constrained, expensive and inflating; or stable cash that can't be used digitally and isn't always easy to find.
+
+\newpage
+\section{Considerations for an Economic Jailbreak} \label{jailbreak}
+
+In this paper, we detail a strategy to achieve widespread Dai adoption in Zimbabwe given an oppositional state.
+
+The dream of such an economic jailbreak has been close to the heart of the crypto faithful for years, but until recently we've lacked some critical pieces.
+
+\subsection{The Tools are Ready Today} \label{tools}
+
+\subsubsection{Dai: A Stable, Incorruptible, Unblockable Banking System} \label{dai}
+
+Any attempt to evangelize most forms of crypto must inevitably cover volatility---a huge discussion fraught with good questions and complicated answers. Worse yet for our purposes, volatility is just another kind of economic uncertainty. It is not generally attractive for a Zimbabwean to move from inflationary uncertainty to speculative uncertainty, because in either case, one still can't predict how much one's money will be worth in a week or a year.
+
+Dai inherits the benefits of cryptocurrency, but factors out the volatility. Since February 2018, the value of Dai has stayed firmly between US \$0.95 and \$1.04. Among those who regularly transact in Dai, 1 Dai is simply equal to 1 USD.
+
+The crypto faithful may bristle at calling Dai a ``banking system'', banks being the villain that crypto loves to hate. But from a marketing and user education perspective, the payoff is immense: Dai is simply a new kind of banking system that stores USD. The usual volatility discussion is entirely skipped as irrelevant and unnecessary.
+
+\subsubsection{Bisq and DAIHard: Unstoppable Gateways To Crypto} \label{exchanges}
+
+\href{https://bisq.network/}{Bisq} and \href{daihard.io}{DAIHard} are gateways between fiat currency and crypto, specifically designed to operate in jurisdictions that may actively attempt to shut them down.
+
+With these tools available, Dai as a banking system gains a crucial additional benefit: the guaranteed option of exit. This is an absolutely crucial guarantee for Dai to gain any traction in Zimbabwe, where the banking systems seem to work until you try to get your money out.
+
+\subsection{Challenges} \label{challenges}
+
+Any plan of this sort must address some key challenges to be feasible. These will be briefly summarized, addressed later on in the meat of the paper, and revisited near the end.
+
+\subsubsection{Crypto is Difficult and Complicated} \label{difficult}
+
+Even without volatility, cryptocurrency has some difficult aspects.
+
+First and foremost is security. Unlike a bank, a user who loses his phone cannot bring his ID to a customer service desk and recover the account. Backing up the key is possible, but requires a good understanding of basic cryptographic security practices, which today's general populace simply doesn't have.
+
+Second, there is a dizzying array of tools and wallets available today, many of which are in alpha or beta states, and every month the landscape changes. Contrasted with a bank offering the customer a single, canonical banking app and a single customer service phone number, the complexity of simply getting involved in crypto is huge.
+
+\subsubsection{Issues with Bisq and DAIHard} \label{exchange issues}
+
+(We've written more on these issues \href{https://bisq.network/}{here})
+
+Bisq has a very difficult user interface, requires a robust Internet connection to successfully sync, and can crash several times before the user arrives at a list of offers. Further, the tool does not have the flexibility to allow users to define their own fiat payment methods, which may severely limit the practicality of using Bisq in a place where access to the banking system is so constrained.
+
+DAIHard has smoother UX and accessibility, being a dapp on a webpage rather than a p2p client. It supports more open-ended payment methods, which is a blessing and a curse. But its main problem is that to buy Dai, you need to submit a security deposit of 1/3 the amount you want to purchase, in Dai. So if you have no Dai, DAIHard can't help you get Dai.
+
+Further, both exchanges suffer from low liquidity for fiat/crypto pairs, and currently have no liquidity at all in Zimbabwe.
+
+\subsubsection{Oppositional State} \label{oppositional state}
+
+As locals begin using Dai rather than the local currency, the Zimbabwean banking and regulatory system will lose power and influence. This existential threat will inevitably trigger oppositional action, that will escalate in extremity as first forms of control fail to stop the economic escape of the populace.
+
+\subsubsection{Internet Connection Required} \label{internet required}
+
+Zimbabwe suffers from severe load-shedding, such that many households have power for less than 6 hours a day. Without power there is no wifi, and without Internet, cryptocurrency can't be used. Locals can get data packages from their cell networks, and often do, but these packages aren't cheap.
+
+A more serious problem is that Internet access, whether via wifi or a mobile network, is susceptible to interference from the state. This could theoretically range anywhere from blocking IPs to ordering all ISPs to block all access.
+
+\subsubsection{Funding} \label{funding}
+
+The plan detailed below requires funding, primarily for marketing in the bootstrap phase (\ref{bootstrapping}). The impact could be enormously positive, but the benefit is diffuse and doesn't promise profit for any particular organization. It's a typical tragedy of the commons problem: who will foot the bill?
+
+\newpage
+\section{Blueprint for an Economic Jailbreak}  \label{blueprint}
+\subsection{ZimDai Agents} \label{agents}
+
+The core of the plan revolves around setting up \textit{ZimDai Agents}. An Agent is anyone within Zimbabwe who can operate crypto/Dai with relative fluency, and utilizes these systems to offer various bank-like services to others. Because crypto can easily route around the highly constrained financial systems of Zimbabwe, these services will be cheaper and better than any alternatives attached to the banking system.
+
+Agents are expected to charge commissions for their services, and will act as ambassadors of a sort to a new, better banking system. By focusing on setting up and educating agents, we enable their entire social network to realize the benefits of crypto, but avoid the cost of educating the whole community. And by ensuring the agents can profit from this work, we incentivize the agents to solve any problems and grow their clientele autonomously.
+
+We do not define agents as vetted by Team Toast or any other organization. Anyone who can reliably offer the services listed below to Zimbabweans may be considered a ZimDai agent; thus, growth of the agent network should be seen as an organic, grassroots phenomenon, which can be encouraged into spontaneous growth, rather than a carefully selected set of employees or hierarchical "blue church" structure.
+
+\subsection{Agent Services} \label{services}
+
+Each of the following services addresses a significant failure of the current Zimbabwean banking system to address their customers' needs. The agents can charge a small commission and still remain extremely competitive against the constricted, cumbersome, and expensive alternatives.
+
+\subsubsection{Intercity Money Movement} \label{intercity}
+
+If a local wants to send money to a relative in another town, currently they have three basic options:
+
+\begin{itemize}
+	\item Physically deliver the cash
+	\item Ecocash or bank transfers
+	\item Western Union and similar services
+\end{itemize}	
+
+Bank transfers require an invoice, ecocash has stringent limits, and both have significant fees. Both also have additional fees and obstacles related to withdrawals.
+
+Western Union doesn't have too many restrictions, but the fees are significant at 10\%, and the sender and recipient must both physically visit a Western Union to complete the transaction.
+
+We offer a better option. A local can bring bond notes or foreign cash to an agent and specify the recipient the money is intended for. The agent takes the cash and sends Dai to the agent in the recipient's area. This second agent receives the Dai, then gives the equivalent in cash to the recipient. If each agent charges 1\%, the total 2\% fee is still extremely competitive compared to the alternatives.
+
+\subsubsection{International Dai to Cash In Hand} \label{remittance}
+
+There is a large network of Zimbabweans who have left the country for greener pastures, often called the \href{https://en.wikipedia.org/wiki/Zimbabwean_diaspora}{Zimbabwe Diaspora}. Large amounts of money are constantly sent back from this diaspora to those still in Zimbabwe.
+
+There exist services to help with this, but they aren't cheap. Western Union charges 10\%, and companies like Mukuru charge \$5 as a minimum fee. If a Zimbabwean has a relative sending money who is technologically literate, they have a chance to save a significant amount by using Dai instead, with the caveat that the sender must first trade their local currency for Dai.
+
+At first we'll simply market to people in the diaspora who are already familiar with crypto, i.e. ``Turn your Dai into cash-in-hand for Zimbabwean relatives!'' With time we can choose high-value countries to set up agents similar to those in Zimbabwe, so we can market a much broader service: ``send money to Zimbabwean relatives'', where agents on either end translate the money in and out of Dai for the actual transfer.
+
+\subsubsection{Payment To and From South African Bank Accounts} \label{south african accounts}
+
+Whereas sending money into Zimbabwe is currently simply expensive, sending money out costs more than money. A Zimbabwean must either get reserve bank approval, or physically smuggle foreign cash over the border. The former is impractical for all but the largest businesses, and the latter is a huge investment of time, effort, and petrol, and involves risk of confiscation.
+
+Despite the complications, there is a huge volume of Zimbabweans driving into South Africa to buy goods---some of these are extended shopping trips for household items, and some are for industrial equipment or other business-related goods. This is a natural consequence of the stalled Zimbabwean economy, and the fact that South Africa's economy is relatively stable and productive for the area.
+
+Happily, there already exists a tool called \href{https://hatchlet.co/}{Hatchlet} that can accept Dai deposits and convert them into a ZAR deposit in any South African bank account. It can also do the reverse: accept a ZAR payment and turn it into Dai, deposited into some recipient address. This can be used by a ZimDai agent to offer a simple and extremely attractive service to Zimbabweans: make payments to, or receive payments from, anyone in South Africa. Neither the sender nor the recipient needs to know anything about cryptocurrency.
+
+\subsubsection{Dai Savings Account} \label{savings}
+
+\href{https://blockonomi.com/what-is-decentralized-finance-defi/}{DeFi} has popped up in the last year and has grown fast, and today there are various platforms that allow a Dai holder to earn up to 4\% APY. A first-world citizen in a stable economy might see these DeFi projects as just a better way to save money, but to a Zimbabwean, any kind of savings account is a fundamentally new option. Where before the best they could do was physically hold foreign cash to protect their wealth, they can now protect the wealth \textit{and} grow it.
+
+\subsubsection{Dai Money Changing} \label{dai money changing}
+
+Finally, an agent can simply offer entry and exit into Dai itself. They can help a customer set up a wallet, and then sell Dai for any currency as well as buy Dai back at any point---each time taking a small commission.
+
+\subsection{Agent Liquidity} \label{liquidity}
+
+Each time an agent performs some service, it will affect their local holdings, which must be rebalanced for the agent to realize the profit or offer the service again.
+
+For example, if an agent is holding \$1000 in Dai and \$1000 in USD, and customer wants to send \$500 USD to a South African bank account, the agent will take the \$500 plus a commission and send 500 Dai to the SA bank account via Hatchlet. The agent is then left with over \$1500 USD but only 500 Dai. How does he re-balance?
+
+Agents can trade among themselves, but then the problem becomes ensuring that the network of agents, or Zimbabwe as a whole, has a way of replenishing or selling Dai as demand dictates. With enough momentum, this problem will take care of itself, similar to how the ubiquitous demand of ZAR and USD in Zimbabwe has a way of enticing those currencies to appear in the local economy. But this won't kick in until Dai itself is well-known and has a similarly ubiquitous demand.
+
+\subsubsection{Leveraging a Hungry Bitcoin Market} \label{bitcoin liquidity}
+
+Distinct from the street money changers, there exists within Zimbabwe a healthy, reputation-based market for buying and selling Bitcoin, and there is a consistent 5-10\% markup on price. This represents an interesting benefit to any agent who is facilitating Dai-in services.
+
+An agent might offer to facilitate remittance from a relative who can obtain Dai. This relative sends 100 Dai to the agent plus a 2 Dai fee, and the agent disburses 100 USD to the intended recipient. Then the agent can use a tool like \href{https://changelly.com/}{Changelly} to trade the 102 Dai for BTC for a meager 0.25\% fee, and sell the resultant BTC to the hungry local BTC market for an \textit{additional} profit, ending up with around 110 USD. That's a 10 USD or 10\% profit, for some minor digital work and a single cash handoff.
+
+All this requires is that he knows someone who can send Dai instead of fiat for a remittance use-case, and that he has a contact within the BTC market. Amazingly, he could even offer the remittance service at 0\% fee, and he'd still profit simply by selling to the BTC market.
+
+Eventually, this kind of action will satiate the BTC market, and the 5-10\% markup will disappear, but when this happens it will have a benefit: it means other agents looking to offer Dai-\textit{out} services can then utilize the BTC market as a way to turn local cash into BTC, then into Dai.
+
+In summary, the BTC market can act as an early source of liquidity for agents, which at first will heavily reward agents offering Dai-in services such as remittance facilitation. Later it will be a more neutral source of liquidity, at which point it can cheaply support Dai-out services as well.
+
+\subsubsection{Balancing Dai-Out and Dai-In Services} \label{dai-out dai-in}
+
+We make a distinction between \textit{Dai-out} and \textit{Dai-in} services. Facilitating remittance as in the earlier example is an instance of a Dai-in service, as it leaves the agent with more Dai than he had before and less local currency. In contrast, sending Dai out to South Africa is a Dai-out service as it has the opposite effect.
+
+This distinction is relevant not just to individual agents, but applies to the agent network as a whole: if, for example, most agents are offering remittance, the network will accumulate Dai and drain local currency.
+
+One way an agent can address the liquidity problem is by balancing Dai-in and Dai-out services. If he's sending lots of currency out as Dai, he may begin to market more strongly toward those who want to receive currency from abroad. A similar approach would be to network with another agent who tends to serve the converse type of service. These agents could maintain liquidity by trading with each other with no or little fees, to their mutual benefit.
+
+Just as an agent can individually aim to balance Dai-out and Dai-in services, we can help to guide the entire agent network's floats by targeting either Dai-in or Dai-out use-cases on a national scale.
+
+\subsubsection{Bisq and DAIHard} \label{exchanges insufficient}
+
+As the agent network grows, so will awareness of Dai, and Bisq and/or DAIHard will begin to accumulate more liquidity. In the long term, this will be the most straightforward way an agent can re-balance his liquidity.
+
+\subsection{Summoning the Agent Network} \label{summoning}
+
+\subsubsection{Bootstrapping The Nucleus} \label{bootstrapping}
+
+The bulk of the need for funding (perhaps the entirety of it) comes from this initial effort. A marketing campaign must be launched that is directly aimed at creating an early network of ZimDai agents.
+
+These agents must have two primary qualities: they should be capable of understanding and responsibly handling crypto; and they should have an entrepreneur's capability and drive to find customers.
+
+On-boarding an agent essentially boils down to three pieces:
+
+\begin{enumerate}
+	\item Find the potential agent
+	\item Find a customer for one of the services described in \ref{services}
+	\item Ensure the agent can recover his liquidity as described in \ref{liquidity} after providing the service, at a cost lower than the commission charged for the service
+\end{enumerate}
+
+As touched on in \ref{bitcoin liquidity}, targeting the remittance use-case allows the agent to essentially profit twice; once while offering the service, and again by selling to a hungry Bitcoin market. Another benefit is that this brings Dai into the network, something that would otherwise be difficult early on, when both Bisq and DAIHard have insufficient liquidity to provide convenient entry into Dai.
+
+The first few agents will be the hardest to on-board, as they'll have to solve multiple problems at once. As the agent network grows, agents can begin to specialize further, solving one problem effectively (i.e. leveraging the BTC market to offload Dai, or extending Dai access to a small town) and relying on other agents to solve other problems.
+
+\subsubsection{Spontaneous Agent Entry} \label{spontaneous}
+
+As the agent network grows, liquidity in Bisq and/or DAIHard will grow too, and as agents specialize and find consistent ways to profit, the need for external marketing funding will shrink and eventually vanish, replaced by word-of-mouth of a new business opportunity.
+
+DAIHard and Bisq act as portals to the Dai economy, available to anyone with a laptop, wifi, as well as (for Bisq) patience, some luck, and robust Internet or (for DAIHard) some starting Dai. Anyone who can use these tools to enter and exit Dai can then offer their services as an agent to their community, and make money doing so.
+
+A tech-savvy teenager with Dai can legitimately offer to his community the service of sending money to a South African bank account---or any other service listed in \ref{services}. He can then use DAIHard or Bisq to replenish his stock of Dai, and offer the service again.
+
+Once the agent network is large enough to provide liquidity to newcomers, and agents consistently make profit by offering agent services, the agent network will necessarily grow organically without any outside funding.
+
+\subsection{Consequences of a Healthy Agent Network} \label{consequences}
+
+\subsubsection{Dai as Currency} \label{currency}
+
+In reality, the line between a professional agent on one hand and a naive customer on the other is hardly distinct. As a simple example, a remittance recipient could ask their sender to send them the Dai directly, thereby doing some of the agent's work for them, and only go to an agent to cash out.
+
+Further, the recipient might wait a day or a month to actually trade the Dai in, given that it will indeed hold its USD value. For that matter, they might send some of it to a friend to whom they owe a debt, telling them they can bring it to an agent to redeem it. The friend might be in a different town altogether. And that friend might just decide to pay off a debt to a South African contact via Hatchlet, and never end up going to the agent at all.
+
+Agents will already be settling debts between each other via Dai, and this will naturally begin happening with less and less technical users who peripherally deal with the agents. A shop owner receiving remittance from abroad via an agent may find that his supplier buys supplies from South Africa via an agent. The shop owner could receive the Dai from abroad directly and pay the supplier, and the supplier could use Hatchlet to directly pay his South African supplier, both skipping the use of agents entirely.
+
+In small ways like this, where Dai began as a tool for agents to provide services, it will begin to creep out as a valuable currency in its own right. Curious users will ask questions and begin handling it directly. While it might first feel like a coupon, it will quickly become evident that it's a coupon that keeps its value, doesn't expire, and has a global market value---in a word, sound currency.
+
+\subsubsection{Growth of the Dai Economy by Attrition} \label{fittest}
+
+Currently, a business has a choice between using foreign cash and losing out on digital money services, or using banks and grappling with uncertainty, inflation, taxes, and limitations. Dai offers a third option, combining stable, predictable prices with the advantages of digital money.
+
+A business using Dai, therefore, can scale easily and yet remain completely unaffected by Zimbabwe's inflation and currency control, a clear advantage over every non-Dai-using business. With each new piece of constricting financial legislation, and each batch of newly printed bond notes, Dai-using businesses will remain functional while those using RTGS will suffer. This should naturally lead to the Dai-using sectors growing steadily by attrition.
+
+\subsection{Adding Fuel} \label{fuel}
+
+Aside from the natural, organic consequences of a healthy agent network above, there are ways in which an interested organization or community could add further momentum and resiliency to the ZimDai movement.
+
+\subsubsection{Adoption Drive in Targeted Zimbabwe Community} \label{targeted community}
+
+An appropriately-sized town in Zimbabwe could be targeted to promote the direct use of Dai, replacing the ubiquitous use of Ecocash. The amount of funding available would inform the size of the community targeted; better to get full saturation in a small community than a meager adoption in a big one.
+
+The approach should be more of a dialogue than a broadcast. Direct use of Dai is still so unheard of in the wild that any intuitions on how it would be best used by the layman is theoretical at best. Seminars may be a good format, where a small group of experts can educate anyone interested, while also taking in the reactions, questions, and ideas from those that attend.
+
+One caution with this approach is that it's easily identifiable and targetable by a state facing an existential threat. The leaders of such seminars face this risk directly, in proportion to how revolutionary their language is and how loudly they speak.
+
+\subsubsection{Promote Commerce with South Africa} \label{promote south africa}
+
+As adoption of Dai grows within Zimbabwe, the following pitch could be made to any South African business that gets a significant portion of their business from Zimbabwean buyers:
+
+By only accepting ZAR, the business limits itself to the portion of the Zimbabwean market who is willing to spend time and petrol driving over the border with physical cash. But if the business accepts Dai directly, then suddenly their product is available to any Zimbabwean with Dai and wifi. If the product is digital or can be shipped, then the Zimbabwean customer can order the product without even leaving their home.
+
+This reduction in cost for Zimbabwean customers is so immense that the business could even charge a higher price in Dai, and still see an increase in sales. The business could then sell the Dai via Hatchlet or any other South African crypto exchange. They will have not only increased the number of sales, but even the effective price-per-item.
+
+Dai-holding Zimbabweans, meanwhile, will see more and more businesses in South Africa become available to them, and will be able to make a payment to these businesses for less than \$US0.01 from anywhere with Internet access.
+
+\newpage
+\section{Reviewing Viability} \label{viability}
+
+\subsection{Fertile Ground} \label{fertile}
+
+\subsubsection{Familiarity with USD Pricing} \label{familiar with usd}
+
+From 2008 to 2016, Zimbabwe halted printing their own currency and relied on the USD for economic stability. This so-called \href{https://www.voanews.com/africa/zimbabwe-ends-decade-dollarization-new-currency-reform}{dollarized period} is widely regarded within Zimbabwe as the most stable and prosperous in Zimbabwe's young history. As discussed above, use of USD is still widespread, and goods and services are implicitly priced in USD. Thus, locals are very comfortable pegging their wealth to the price of USD, as Dai offers.
+
+\subsubsection{Ecocash as Digital Currency} \label{ecocash digital}
+
+\href{https://en.wikipedia.org/wiki/EcoCash}{Ecocash} is a ubiquitous mobile-to-mobile payment system, where one user can send RTGS to any other mobile user knowing nothing but the recipient's phone number. This is achieved via USSD codes and a pin, and a confirmation message with the recipient's name.
+
+Everyone accepts ecocash: street vendors, large grocery chains, restaurants, hotels, even beggars.
+
+Ecocash's ubiquity demonstrates that Zimbabweans are comfortable using digital currency for everyday purchases, even with the significant drawbacks detailed in the next section.
+
+\subsubsection{Ecocash as Market Validation} \label{ecocash market}
+
+Ecocash faced a similar bootstrapping problem as Dai adoption faces today: no one cared about Ecocash at first, because there was no real-world use for it. Comparing Ecocash to a Dai wallet as a product, each has pros and cons, but Ecocash is a far cry from a superior product.
+
+Ecocash has two advantages over a Dai wallet: it can be used without the Internet (needing only a basic cell connection to send USSD codes), and it has a much more user-friendly security model, where simply ``losing'' funds in any way is pretty inconceivable.
+
+However, its drawbacks are significant.
+
+First, it uses RTGS as the unit of account. Thus, an Ecocash balance faces the same inflation the bond note does, and is an unwise place to hold any amount of wealth.
+
+Second, withdrawing cash from Ecocash takes a mind-boggling fee of 35\% if you're okay with coins, and 50\% if you want bond notes.
+
+Third, sending ecocash to another user is limited to 500 RTGS (about 25-40 USD) per transaction, so if you want to send more than that, you must navigate the USSD menu multiple times, each time entering the recipient's full phone number and your pin. Each of these transactions takes a 6\% fee.
+
+A Dai wallet could offer the same basic service, but with better UX, fixed low fees, and guaranteed withdrawal at a few \% rather than 50\%.
+
+\subsubsection{Money Changer Network Resiliency} \label{resilient money changers}
+
+In any city in Zimbabwe, you can find street money changers who can trade between the bond note, ecocash, and foreign cash. This network of money changers has resisted all attempts at eradication, which is promising in two ways.
+
+First, it simply illustrates the ineffectiveness of governmental crackdown on a network that serves a hungry market need. Undercover police often come around to where these money changers are known to be, and the money changers just melt away only to come back when the coast is clear. 
+
+Second, this network of money changers themselves will happily incorporate Dai into their arsenal of currencies, as soon as it becomes lucrative to do so. When this happens, Dai gains a foothold in a network that's already well-practiced at surviving and thriving in a hostile regulatory
+environment.
+
+\subsection{Challenges Addressed} \label{challenges addressed}
+
+\subsubsection{Experts Handle the Crypto} \label{experts}
+
+The first challenge we raised in \ref{challenges} is that crypto is difficult and complicated. Despite this, the crypto movement itself has steadily grown. As complex as crypto is, there are people out there who are technical enough to stomach the complexity and become experts.
+
+This plan relies on finding those people within Zimbabwe, and further incentivizing them to get involved by demonstrating a profit potential. Crypto itself is an efficient system, and stable as well with the introduction of Dai. If one agent can expose this efficiency and stability to those around him, he has a business model, and the community has access to a better economic platform.
+
+For the price of educating a few key individuals, we essentially on-board entire communities.
+
+\subsubsection{Early Agent Liquidity Without Exchanges} \label{early liquidity}
+
+The second challenge had to do with Bisq and DAIHard. Neither will start with any liquidity in Zimbabwe and each has its own particular challenges, so any bootstrap plan must include a strategy for providing early liquidity to agents that doesn't rely on these exchanges.
+
+In the very early stages of the movement, this is addressed by focusing on the remittance service. This allows agents to essentially turn their own local currency into Dai while charging commission, knowing they can at any time always rely on the hungry Bitcoin market to offload the Dai (again making a profit) when they want to exit to local currency and provide the service again.
+
+As the hungry BTC market is used in this way, this premium will eventually disappear. At this stage, the same market can be used by agents for the converse purpose of entering Dai via BTC. At some point, the ZimDai movement will outgrow this source of liquidity, but it will serve in the medium-term.
+
+Once the agent network has grown past a handful of individuals, agents can begin trading among themselves to re-balance, to the extent that the network as a whole is relatively balanced between Dai-out and Dai-in services. If there is an abundance of Dai and the agent network is running low on local currency, agents can offer cheaper Dai-out services.
+
+In the long term, as the agent network grows, so will the liquidity on the most useful exchange (whether Bisq, DAIHard, or something else), further lowering the hassle of entry and exit.
+
+\subsubsection{Resiliency Within an Oppositional State} \label{state resilient}
+
+Typically, when a state wants to shut down crypto activity, the easiest option is to go after the exchanges that allow entry and exit. That strategy will prove ineffective here, as both DAIHard and Bisq have strong (and independent) claims to resiliency.
+
+As discussed in \ref{resilient money changers}, at a fairly low level of adoption, Dai will begin embedding itself into the incredibly resilient money-changer network in Zimbabwe that has already resisted all attempts at eradication. When this happens, stamping out the availability and use of Dai will prove just as impossible as it has been to stop use the of USD.
+
+The agent network will be growing organically and unpredictably, without any central leadership or headquarters. Further, the boundaries of the network will be incredibly fuzzy (i.e. is a teenager who once helped his Grandma send \$300 to South Africa an agent?). The state may eventually make examples of high-profile agents, but this will at most slow the movement down.
+
+The network of users will be even more decentralized than that of the agents, and the wide (if subtle) use of USD in Zimbabwe shows that Zimbabweans are comfortable and practiced when it comes to breaking the law to protect their wealth.
+
+Any business in South Africa that sells products for Dai will act as an unstoppable portal out of Zimbabwe's oppressive economy, available to any Zimbabwean with Dai. Despite these businesses being easily identifiable, Zimbabwean regulatory bodies will be unable to reach over the border to pressure these businesses in any way.
+
+\subsection{Challenges Remaining} \label{challenges remaining}
+
+\subsubsection{Reliability of Internet Access} \label{reliable internet access}
+
+The challenge relating to Internet access is not as easy to directly address at this stage. Internet access in Zimbabwe is spotty, mostly due to unreliable electricity.
+
+To some degree, this is addressed by setting up agents to do most of the work and provide services to customers: so long as a single agent can secure Internet access, his entire network of clientele can access the benefits of crypto.
+
+But the problem is worse than that, because the state can do a lot of nasty things when it comes to Internet access. Blocking certain web pages or apps would be the start of it, and this could escalate as far as simply ordering all ISPs to stop serving Internet, either to targeted individuals or to the entire country.
+
+As dark as that scenario is, it's far from hopeless. Shutting down the Internet doesn't destroy crypto, after all; it just temporarily removes access to it. And going this far would be an international news item, inviting global scrutiny and likely unearthing some very powerful allies in the process.
+
+Anything less than a total shut-down of the Internet can be responded to in a variety of ways. VPNs can be used, proxies can be set up, and nodes can multiply.
+
+Fundamentally, cryptocurrency was designed to operate as decentralized infrastructure. While the specifics will have to be navigated in real time, any response by the Zimbabwean regulatory bodies to simply ``shut it down'' will prove futile in the long run.
+
+An attempt to fully address this challenge at this early stage would be too theoretical to mean much, but we are confident it will prove solvable as the need arises.
+
+\subsubsection{Community Engagement and Funding} \label{community funding}
+
+The very first step in this movement is to bootstrap an agent network as discussed in \ref{bootstrapping}, and this requires a marketing budget as well as a dedicated team of leaders. For this, we turn to the crypto industry and community.
+
+An obvious way to approach this would be to hold a token sale for a DAO, where token holders vote on how the DAO disburses the funds. The details can be worked out in dialogue with the community, but the tokens should be primarily designed as voting rights in a venture of philanthropy, rather than speculative assets in some profit generating machine.
+
+For years, liberating people from an abusive economic regime has been a dream close to the heart of the crypto faithful. We trust that if the plan detailed here is sound, we will find significant community support and engagement, from both individuals and organizations.
+
+\section{Next Steps} \label{next steps}
+
+\subsection{Moving Fast} \label{moving fast}
+
+By publishing this paper, we must assume we've revealed this plan to a potentially oppositional state (although in reality, it may not show up on their radar for some time). Having potentially given up the element of surprise, moving quickly is important. Fortunately, the crypto industry is capable of moving rather quickly.
+
+\subsection{Feedback and Partners} \label{feedback and partners}
+
+Our first call-to-action for an interested reader is to circulate \href{https://github.com/coinop-logan/ZimDai/blob/master/whitepaper.pdf}{the current version of this paper} as much as possible, to friends or within groups. We are eager to hear any insightful criticism or suggestions, so we can strengthen the plan.
+
+After reading or skimming this paper, please \href{https://t.me/joinchat/EGlTfRYexSWmSy-C75Q2Xw}{join the Telegram} and/or contribute to the \href{https://www.reddit.com/r/ZimDai}{ZimDai subreddit}. This way we can both track the circulation of this paper and engage with the community, working good suggestions into successive versions of this paper.
+
+At the same time, we'll be looking for individuals and organizations who want to play an active leadership role in the movement. This could be big names in crypto, anyone experienced in marketing, or early agents/organizers within Zimbabwe. These may be volunteers willing to begin immediately, or professionals looking for paid work once funding is available.
+
+\subsection{Funding and Leadership} \label{funding and organization}
+
+This paper has been written as a side effect of Team Toast's market research into Zimbabwe, but we are not prepared to commit to this given our limited runway. This means that as of this writing, ZimDai lacks a long-term committed leadership structure and a marketing budget.
+
+This is the largest gap in the plan at this time. The DAO Team Toast is building, Foundry, may choose fill this gap, depending on the scale of funding resulting from the Foundry token sale. For updates on this, follow the \href{https://medium.com/daihard-buidlers}{Team Toast Medium publication}.
+
+\subsection{Agent Bootstrapping} \label{agent bootstrapping}
+
+Once an organization is ready to lead and fund a concerted marketing effort (whether Foundry or some other entity), the bootstrapping as detailed in \ref{bootstrapping} can be started. The first target should be organic agent network growth; at that point the genie will be out of the bottle and will require no further centralized leadership to flourish.
+
+
+
+\end{document}
